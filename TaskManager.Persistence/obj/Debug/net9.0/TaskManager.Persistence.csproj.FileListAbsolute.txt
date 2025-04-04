@@ -1,0 +1,12 @@
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\bin\Debug\net9.0\TaskManager.Persistence.deps.json
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\bin\Debug\net9.0\TaskManager.Persistence.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\bin\Debug\net9.0\TaskManager.Persistence.pdb
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.csproj.AssemblyReference.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.AssemblyInfoInputs.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.AssemblyInfo.cs
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\refint\TaskManager.Persistence.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.pdb
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\ref\TaskManager.Persistence.dll

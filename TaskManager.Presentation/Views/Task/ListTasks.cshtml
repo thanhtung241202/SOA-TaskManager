@@ -1,0 +1,104 @@
+@model IEnumerable<TaskManager.Persistence.Models.TaskItem>
+
+<h2>Danh sách công việc</h2>
+<div class="mb-3">
+    <form asp-action="ListTasks" method="get" class="form-inline">
+        <div class="form-group mr-2">
+            <label for="categoryFilter" class="mr-2">Danh mục:</label>
+            <select name="categoryFilter" class="form-control" onchange="this.form.submit()">
+                <option value="">Tất cả</option>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option value="@category.Name" selected="@(category.Name == ViewBag.CurrentCategoryFilter)">@category.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group mr-2">
+            <label for="priorityFilter" class="mr-2">Ưu tiên:</label>
+            <select name="priorityFilter" class="form-control" onchange="this.form.submit()">
+                <option value="">Tất cả</option>
+                @foreach (var priority in ViewBag.Priorities)
+                {
+                    <option value="@priority.Name" selected="@(priority.Name == ViewBag.CurrentPriorityFilter)">@priority.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group mr-2">
+            <label for="statusFilter" class="mr-2">Trạng thái:</label>
+            <select name="statusFilter" class="form-control" onchange="this.form.submit()">
+                <option value="">Tất cả</option>
+                @foreach (var state in ViewBag.States)
+                {
+                    <option value="@state.Name" selected="@(state.Name == ViewBag.CurrentStatusFilter)">@state.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group mr-2">
+            <label for="sortBy" class="mr-2">Sắp xếp:</label>
+            <select name="sortBy" class="form-control" onchange="this.form.submit()">
+                <option value="">Mặc định</option>
+                <option value="Priority" selected="@(ViewBag.CurrentSortBy == "Priority")">Ưu tiên</option>
+                <option value="Date" selected="@(ViewBag.CurrentSortBy == "Date")">Ngày</option>
+            </select>
+        </div>
+    </form>
+</div>
+<a asp-action="CreateTask" class="btn btn-success mb-3">➕ Thêm công việc</a>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Tiêu đề</th>
+            <th>Danh mục</th>
+            <th>Ưu tiên</th>
+            <th>Trạng thái</th>
+            <th>Ngày</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@(item.Category?.Name ?? "Chưa phân loại")</td>
+                <td>
+                    @if (item.Priority != null)
+                    {
+                        <span style="color: @(item.Priority.Color)">@item.Priority.Name</span>
+                    }
+                    else
+                    {
+                        <span>Chưa ưu tiên</span>
+                    }
+                </td>
+                <td>
+                    @if (item.Status != null)
+                    {
+                        @if (item.Status.Name == "Xong")
+                        {
+                            <span class="badge bg-success">✅ @item.Status.Name</span>
+                        }
+                        else if (item.Status.Name == "Đang làm")
+                        {
+                            <span class="badge bg-info">⏳ @item.Status.Name</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning text-dark">⏳ @item.Status.Name</span>
+                        }
+                    }
+                    else
+                    {
+                        <span>Chưa có trạng thái</span>
+                    }
+                </td>
+                <td>@item.Date.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-action="EditTask" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️ Sửa</a>
+                    <a asp-action="DetailsTask" asp-route-id="@item.Id" class="btn btn-info btn-sm">ℹ️ Chi tiết</a>
+                    <a asp-action="DeleteTask" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa?');">🗑️ Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\bin\Debug\net9.0\TaskManager.Business.deps.json
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\bin\Debug\net9.0\TaskManager.Business.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\bin\Debug\net9.0\TaskManager.Business.pdb
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\bin\Debug\net9.0\TaskManager.Persistence.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\bin\Debug\net9.0\TaskManager.Persistence.pdb
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.csproj.AssemblyReference.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.AssemblyInfoInputs.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.AssemblyInfo.cs
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.csproj.CoreCompileInputs.cache
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskMana.03078404.Up2Date
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\refint\TaskManager.Business.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.pdb
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\ref\TaskManager.Business.dll

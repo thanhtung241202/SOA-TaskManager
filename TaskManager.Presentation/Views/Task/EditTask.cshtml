@@ -1,0 +1,49 @@
+@model TaskManager.Persistence.Models.TaskItem
+
+<h2>Sửa công việc</h2>
+<form asp-action="EditTask">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input asp-for="Id" type="hidden" />
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Details" class="control-label"></label>
+        <input asp-for="Details" class="form-control" />
+        <span asp-validation-for="Details" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" type="date" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CategoryId" class="control-label">Danh mục</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))">
+            <option value="">Chọn danh mục</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PriorityId" class="control-label">Ưu tiên</label>
+        <select asp-for="PriorityId" class="form-control" asp-items="@(new SelectList(ViewBag.Priorities, "Id", "Name"))">
+            <option value="">Chọn ưu tiên</option>
+        </select>
+        <span asp-validation-for="PriorityId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="StatusId" class="control-label">Trạng thái</label>
+        <select asp-for="StatusId" class="form-control" asp-items="@(new SelectList(ViewBag.States, "Id", "Name"))">
+            <option value="">Chọn trạng thái</option>
+        </select>
+        <span asp-validation-for="StatusId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="ListTasks" class="btn btn-info">Quay lại</a>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
