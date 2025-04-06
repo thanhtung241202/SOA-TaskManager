@@ -10,3 +10,4 @@ C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\ne
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\refint\TaskManager.Persistence.dll
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.pdb
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\ref\TaskManager.Persistence.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Persistence\obj\Debug\net9.0\TaskManager.Persistence.sourcelink.json

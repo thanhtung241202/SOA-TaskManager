@@ -13,3 +13,4 @@ C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\refint\TaskManager.Business.dll
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.pdb
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\ref\TaskManager.Business.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Business\obj\Debug\net9.0\TaskManager.Business.sourcelink.json

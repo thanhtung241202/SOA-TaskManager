@@ -267,3 +267,4 @@ C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Presentation\obj\Debug\n
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Presentation\obj\Debug\net9.0\TaskManager.Presentation.pdb
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Presentation\obj\Debug\net9.0\TaskManager.Presentation.genruntimeconfig.cache
 C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Presentation\obj\Debug\net9.0\ref\TaskManager.Presentation.dll
+C:\Users\Tung\TaskManagerLayeredTraditional\TaskManager.Presentation\obj\Debug\net9.0\TaskManager.Presentation.sourcelink.json
